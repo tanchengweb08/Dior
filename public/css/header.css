@@ -1,0 +1,146 @@
+
+.header{
+    width:100%;
+    height:60px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.header .header-content {
+    width:100%;
+    height:60px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* 目录按钮 */
+.header .header-content .header-left button{
+    border:0.0625rem solid #E5E5E5;
+    border-radius:1.5rem;
+    height:2.5rem;
+    width:5rem;
+    background-color:#fff; 
+    cursor:pointer;
+}
+.header .header-content .header-left button>span>svg{
+    width:15px;
+    height:15px;
+}
+/*弹出框*/
+.header .popup{
+    width:403px;
+    float: left;
+    z-index:10;
+    position: absolute;
+    top:-8px;
+    left:0px;
+    display: none;
+    
+    
+} 
+.header .popup .popup-1{
+    margin-top:0;
+    background:#fff;
+}
+.header .popup .popup-close{
+        width:353px;
+        height:79;
+        padding:0 28.5px;
+        align-items: center;
+        text-align: left;
+        
+}
+.header .popup .popup-close button{
+    border: 0;
+    background: #fff;
+    font-size: 30px;
+}
+.header .popup .popup-nav ul{
+    list-style: none;
+    text-align: center;
+    width:100%;
+    padding:0;
+    
+}
+
+/*遮罩*/
+.header .popup .over{
+    width:100%;
+    height:100%;
+    position:fixed;
+    float: left;
+    z-index:-1;
+    background:rgba(0, 0, 0, 0.7);
+    display: block;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* 女士一级弹出框*/
+.popup .popup-nav .popup-nav-lady{
+    display: none;
+}
+/* 女士返回键 */
+.popup-nav-tt1{
+    margin:0 auto;
+    cursor: pointer;
+    font-size:20px;
+    height:54px;
+    width:373px;
+}
+/* 弹出框一级标题 */
+ .nav-bt{
+    display: block;
+    cursor:pointer;
+    font-size:16px;
+    margin:0 auto;
+    height:54px;
+    width:185.375px;
+    border:0;
+    background: #fff;
+
+}
+/*隐藏二级目录 chengy shoutib xiel...*/
+.nav-lady-ul{
+    display: none;
+ 
+}
+/* 弹出框二级标题 */
+.nav-lady-a{
+    height:54px;
+    width: 185.375px;
+    display: inline-block;
+    text-decoration: none;
+    color:#000;
+
+}
+/*弹出框左右分列*/
+.pop-nav-nav{
+    display: flex;
+    justify-content: space-between;
+    border-top:0.0625rem solid #E5E5E5;
+}
+/* 返回键 */
+.nav-lady-return{
+    height:54px;
+    width:403px; 
+    cursor:pointer;
+    border-top:0.0625rem solid #E5E5E5;
+    line-height: 54px;
+    border-bottom:0.0625rem solid #E5E5E5;
+    font-size:20px;
+}
+/* 第三级目录 */
+.nav-lady-ul li a{
+    height:54px;
+    width:150px;
+    display: inline-block;
+    text-decoration: none;
+    color:#000;
+    line-height: 54px;   
+}
+
+

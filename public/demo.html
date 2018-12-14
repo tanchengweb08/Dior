@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>轮播</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+
+        }
+        #demo{
+           overflow: hidden; 
+           position: relative;
+           width:1440px;
+           height:616.5px;
+        }
+        #demo ul{
+            list-style: none;
+            width:8640px;
+            height:616.5px;
+            position: absolute;
+        }
+        #demo ul li{
+           float: left;
+           }
+        #demo ul li img{
+           width:1440px;    
+        }
+        #demo-arrow span{
+            position: absolute;
+        }
+        #demo-arrow .demo-arrow-left{
+            top:258px;
+            left:40px;
+        }
+        #demo-arrow .demo-arrow-right{
+            top:258px;
+            left:1340px;
+        }
+        #demo-arrow a{
+            display: inline-block;
+            width:100px;
+            height:140px;
+            text-decoration: none;
+            font-size:100px;
+            color: #fff;
+            opacity: 0.5; 
+        }
+        #point span{
+            width:10px;
+            height:10px;
+            border-radius: 50%;
+            float:left;
+            position: relative;
+            background: #ddd;
+            margin-right: 10px;
+            top:580px;
+            left:1300px;
+        }
+        #point .co{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo">
+        <ul>
+            <li><img src="./img/demo1.jpg" alt=""></li>
+            <li><img src="./img/demo2.jpg" alt=""></li>
+            <li><img src="./img/demo3.jpg" alt=""></li>
+            <li><img src="./img/demo4.jpg" alt=""></li>
+            <li><img src="./img/demo5.jpg" alt=""></li>
+            <li><img src="./img/demo6.jpg" alt=""></li>
+        </ul>
+        <div id="demo-arrow">
+            <span class="demo-arrow-left"><a href="javasccript: " class="a1">&lt</a></span>
+            <span class="demo-arrow-right"><a href="javasccript:" class="a2">&gt</a></span>
+        </div>
+        <div id="point">
+            <span class="co"></span>
+            <span class=""></span>
+            <span class=""></span>
+            <span class=""></span>
+            <span class=""></span>
+            <span class=""></span>  
+        </div>
+    </div>
+
+    
+    <script>
+        //自动轮播
+        /*var li=document.getElementById("demo").getElementsByTagName("li");
+        var i=0;
+        var len=li.length;
+        var demo=document.getElementById("demo");
+        var t=setInterval(function(){
+            li[i].style.display="none";
+            i++;
+            if(i==len){
+                i=0;
+            }
+            li[i].style.display="inline-block";   
+        },1500);
+        demo.onmouseover=function(){
+             clearInterval(t);
+            }*/
+
+            //轮播
+            var demo=document.getElementById("demo");
+            var dul=demo.getElementsByTagName("ul")[0];
+            var dli=dul.getElementsByTagName("li");
+            var speed=-dli[0].offsetWidth;
+            var psp=document.getElementById("point").getElementsByTagName("span")
+            function move(){
+                dul.style.left=this.dul.offsetLeft+speed+"px";
+                if(dul.offsetLeft<=-8640){
+                    dul.style.left=0;
+                }
+                if(dul.offsetLeft>0){
+                    dul.style.left=-1440*(dli.length-1)+"px";
+                }
+                point();
+                console.log(dul.offsetLeft)
+            }
+            time=setInterval(move,1000);
+            console.log(dul.offsetWidth)
+            console.log(dli[0].offsetWidth)
+            //小圆点
+            function point(){
+                var pw=dul.offsetLeft/-dli[0].offsetWidth;
+                for(var i=0;i<psp.length;i++){
+                    psp[i].className=""
+                }
+                psp[pw].className="co";
+                console.log(psp[pw]);
+            }
+            //鼠标进入停止轮播
+            demo.onmouseover=function(){clearInterval(time)};
+            //鼠标移出继续轮播
+            demo.onmouseout=function(){time=setInterval(move,1000)};
+            //点击按钮
+             var dar=document.getElementById("demo-arrow");
+            var dara=dar.getElementsByTagName("a");
+            console.log(dara);
+            // var a1=document.querySelector(".a1")
+            // console.log(a1  )
+            //左按钮
+            dara[0].onclick=function(){
+                speed=dli[0].offsetWidth;
+                setTimeout(move,0)
+            }
+            //右按钮
+            dara[1].onclick=function(){
+                speed=-dli[0].offsetWidth;
+                time=setTimeout(move,0)
+            } 
+           //a1.onclick=function(){setTimeout( move,0)}
+            //小圆点点击
+            for(var i=0;i<psp.length;i++){
+                var j;
+                psp[i].j=i;
+                psp[i].onclick=function(){
+                    for(var i=0;i<psp.length;i++){
+                    psp[i].className=""
+                }
+                    this.className="co";
+                    dul.style.left=-dli[0].offsetWidth*this.j+"px";
+                    console.log(this.j)
+                }
+
+            }
+    </script>
+</body>
+</html>
