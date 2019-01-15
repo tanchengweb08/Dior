@@ -1,0 +1,38 @@
+.store{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 125px;
+    padding-bottom:125px;
+    position: relative;
+    top:800px;
+    left:0px;
+}
+.store-button{
+    width:325px;
+    height: 60px;
+    border:0.0625rem solid black;
+    border-radius:3.75rem;
+    overflow: hidden;
+    font-size:18px;
+    display: flex;
+    align-items: center;
+}
+.store-button>input{
+    width:250px;
+    height:60px;
+    margin-left:20px;
+    border:0px;
+}
+.store-button>button{
+    width:70px;
+    height:60px;
+    background: #757575;
+    border:0;
+}
+.store-button>button>span>img{
+    width:25px;
+    height:25px;
+    background: #fff;
+}

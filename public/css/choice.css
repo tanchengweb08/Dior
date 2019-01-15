@@ -1,0 +1,135 @@
+.choice{
+    text-align: center;
+    width:1440px;
+    height:890px;
+    overflow: hidden;
+    position: relative;
+    top:300px;
+    left:300px;
+
+}
+.choice-lunbo{
+   width:2880px;
+   display: flex;  
+   position: absolute;
+}
+
+.choice-lb1{
+    display: flex;
+    justify-content: center; 
+    float: left; 
+    width:1240px;
+    margin-left:100px; 
+    margin-right:100px;    
+}
+.choice-lb1>div>img{
+    width:364px;
+    height:393.27px;
+}
+.choice-text{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width:364px;
+    height:160px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.choice-text>p{
+    color: #757575;
+    font-size: 0.9375rem;
+    height:20px;
+}
+.choice-text>span{
+    font-size: 0.9375rem;
+    margin-bottom: 10px;
+}
+
+.choice-lb2{
+    display: flex;
+    justify-content: center; 
+    float: left;
+    width:1240px;
+    margin-left:100px; 
+    margin-right:100px;       
+}
+.choice-lb2>div>img{
+    width:364px;
+    height:393.27px;
+}
+.choice-lb-button1{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.choice-lb-button1>a{
+    margin-top: 20px;
+    text-decoration: none;
+    color:#fff;
+    background: #000;
+    width:118px;
+    height:48px;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choice-lb-button1>a>img{
+    width:20px;
+    height:20px;
+}
+.choice-lb-button2{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.choice-lb-button2>a{
+    margin-top: 20px;
+    text-decoration: none;
+    color:#000;
+    background: #fff;
+    width:118px;
+    height:48px;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #000;
+}
+
+/* 左右箭头 */
+.choice-arrow>span{
+    position: absolute;
+}
+.choice-arrow-left{
+    top: 400px;
+    left: 40px;
+}
+.choice-arrow-right{
+    top: 400px;
+    left:1340px;
+}
+.choice-arrow>span>a{
+    display: inline-block;
+    width:50px;
+    height:50px;
+    text-decoration: none;
+    font-size:50px;
+    color: #000;
+    opacity: 0.5; 
+}
+/* 小圆点 */
+.choice-point>span{
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    float:left;
+    position: relative;
+    background: #ddd;
+    margin-right:10px;
+    top:675px;
+    left:700px;
+}
+.choice-point>.col{
+    background: black;
+}

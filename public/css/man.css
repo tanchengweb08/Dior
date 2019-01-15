@@ -1,0 +1,64 @@
+.man>h2{
+    font-size: 3.25rem;
+    margin-bottom: 20px;
+}
+.man{
+    text-align: center;
+    box-sizing: border-box;
+    width:1440px;
+    position: relative;
+    top:500px;
+    left:300px;
+}
+.man-ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:1440px;
+    padding: 0px;
+    margin-top:30px; 
+}
+.man-ul>li>a{
+    text-decoration: none;
+    color:#000;
+}
+.man-li-1>a>img{
+    width:1440px;
+    height:607px;
+}
+.man-li-2>a>img{
+    width:700px;
+    height:355px;
+}
+.man-li-3>a>img{
+    width:329px;
+    height:356px;
+}
+.man-text-1{
+    text-align: start;
+}
+.man-text-2{
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
+    width:700px;
+}
+.man-text-3{
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
+    width:329px;
+}
+.man-text-1>h3{
+    font-size: 2rem;
+    
+}
+.man-text-2>h3{
+    font-size: 2rem;
+    
+}
+.man-text-3>h3{
+    font-size: 2rem;
+    
+}

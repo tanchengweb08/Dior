@@ -1,0 +1,122 @@
+footer{
+    width:1500px;
+    height:394px;
+    position: relative;
+    top:1050px;
+    left:0px;
+}
+.footer{
+    display: flex;
+    justify-content:space-around
+}
+.footer-left{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-left div div{
+    margin-bottom: 15px; 
+}
+.footer-left div div span{
+    font-size: 18px;
+    color:#000;
+
+}
+.footer-left-input{
+    width:100%;
+    height: 52px;
+    border:0.0625rem solid black;
+    border-radius:3.75rem;
+    overflow: hidden;
+}
+.footer-left-input span{
+    width:215px;
+    height:50px;
+    display: inline-flex;
+    padding-left: 40px;
+   
+}
+.footer-left-input span input{
+    width:215px;
+    height:48px;
+    border:0;
+}
+.footer-left-input button{
+    width:70px;
+    height:50px;
+    border:0;
+}
+.footer-center-ul {
+    list-style: none;
+    line-height: 2.67;
+    text-align: center;
+}
+.footer-center-ul li a{
+    color:#000;
+    font-size: 18px;
+}
+.footer-center-div{
+    padding: 15px;
+}
+.footer-center-div>div>a{
+    text-decoration: none;
+    color:#808080;
+    font-size: 12px;
+}
+.footer-center-div>div>span{
+    text-decoration: none;
+    color:#808080;
+    font-size: 12px;
+}
+.footer-right{
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-right-top div span{
+    color:#000;
+    font-size: 18px;
+}
+.footer-right-top-wb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:80px;
+    height:80px;
+    border:1px solid #000;
+    border-radius: 50%;
+    margin: 20px;
+}
+.footer-right-top-wb>img{
+    width:40px;
+    height:40px;
+}
+.footer-right-bottom div span{
+    color:#000;
+    font-size: 18px;
+}
+.footer-right-bottom div select{
+    border: 0;
+    width:325px;
+    height: 50px;
+    font-size: 18px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none; 
+   padding-left: 40px;
+}
+.footer-right-select{
+    width:100%;
+    height: 52px;
+    border:0.0625rem solid black;
+    border-radius:3.75rem;
+    overflow: hidden;
+    margin: 20px;
+}
+.footer-right-bottom div select option{
+     text-align: center;
+}

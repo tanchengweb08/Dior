@@ -1,0 +1,29 @@
+.advantage{
+    top:1000px;
+    left:0px; 
+    position: relative;
+}
+.advantage-content{
+    padding: 25px;
+    text-align: center;
+     background-color: black;
+    color: #fff;
+    height: 100%;
+    
+   
+}
+.advantage-content-ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+}
+.advantage-content-ul li{
+    margin:20px; 
+    width:266px;
+    height:145px;
+}
+.advantage-content-ul li span  img{
+    width:36px;
+    height:36px;
+}

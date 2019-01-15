@@ -1,0 +1,51 @@
+.lady>h2{
+    font-size: 3.25rem;
+    margin-bottom: 20px;
+}
+.lady{
+    text-align: center;
+    box-sizing: border-box;
+    width:1440px;
+    position: relative;
+    top:350px;
+    left:300px;
+}
+.lady-ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:1440px;
+    padding: 0px;
+    margin-top:30px;
+    
+}
+.lady-ul>li>a{
+    text-decoration: none;
+    color:#000;
+}
+.lady-li-1>a>img{
+    width:1440px;
+    height:607px;
+}
+.lady-li-2>a>img{
+    width:329px;
+    height:356px;
+}
+.lady-text-1{
+    text-align: start;
+}
+.lady-text-2{
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
+    width:329px;
+}
+.lady-text-1>h3{
+    font-size: 2rem;
+    
+}
+.lady-text-2>h3{
+    font-size: 2rem;
+    
+}

@@ -1,6 +1,6 @@
 /*左边目录弹出框*/
 var hd=document.getElementsByClassName("header-left")[0]
-console.log(hd);
+// console.log(hd);
 var hp=document.getElementsByClassName("popup")[0]
 hd.onclick=function(){
 hp.style.display="block"
@@ -213,5 +213,357 @@ ladyhf1.onclick=function(){
     for(var i of ladycyn){
         i.style.display="block"; 
         ladyhuf.style.display="none";
+    }
+}
+
+// 男士
+/*点击男士进入下一层*/
+var t2=document.getElementsByClassName("popup-nav-t2")[0];
+var pnm=document.getElementsByClassName("popup-nav-man")[0];
+t2.onclick=function(){
+    for(var i of tn){
+        i.style.display="none";
+    }
+    pnm.style.display="block";
+}
+/*点击<男士返回上一层*/
+var tt2=document.getElementsByClassName("popup-nav-tt2")[0]; 
+tt2.onclick=function(){
+    for(var i of tn){
+        pnm.style.display="none";
+        i.style.display="block";
+    }
+}
+/*点击皮衣打开下一层*/
+var manpy=document.getElementsByClassName("nav-man-py")[0]
+var manna=document.querySelectorAll(".nav-man-a");
+var manpiy=document.getElementsByClassName("nav-man-piy")[0]
+var manri=document.getElementsByClassName("popup-nav-man-right")[0]
+manpy.onclick=function(){
+    for(var i of manna){
+        i.style.display="none";
+        manri.style.display="none"
+        manpiy.style.display="block";
+    }
+}
+/*点击<皮衣返回上一层*/
+var manpy1=document.getElementsByClassName("nav-man-py1")[0]
+manpy1.onclick=function(){
+    for(var i of manna){
+        i.style.display="block";
+        manri.style.display="block"
+        manpiy.style.display="none";
+    }
+}
+/*点击皮具打开下一层*/
+var manpj=document.getElementsByClassName("nav-man-pj")[0]
+var manpij=document.getElementsByClassName("nav-man-pij")[0]
+manpj.onclick=function(){
+    for(var i of manna){
+        i.style.display="none";
+        manri.style.display="none"
+        manpij.style.display="block";
+    }
+}
+/*点击<皮具返回上一层*/
+var manpj1=document.getElementsByClassName("nav-man-pj1")[0]
+manpj1.onclick=function(){
+    for(var i of manna){
+        i.style.display="block";
+        manri.style.display="block"
+        manpij.style.display="none";
+    }
+}
+/*点击鞋履打开下一层*/
+var manxl=document.getElementsByClassName("nav-man-xl")[0]
+var manxiel=document.getElementsByClassName("nav-man-xiel")[0]
+manxl.onclick=function(){
+    for(var i of manna){
+        i.style.display="none";
+        manri.style.display="none"
+        manxiel.style.display="block";
+    }
+}
+/*点击<鞋履返回上一层*/
+var manxl1=document.getElementsByClassName("nav-man-xl1")[0]
+manxl1.onclick=function(){
+    for(var i of manna){
+        i.style.display="block";
+        manri.style.display="block"
+        manxiel.style.display="none";
+    }
+}
+/*点击配饰打开下一层*/
+var manps=document.getElementsByClassName("nav-man-ps")[0]
+var manpeis=document.getElementsByClassName("nav-man-peis")[0]
+manps.onclick=function(){
+    for(var i of manna){
+        i.style.display="none";
+        manri.style.display="none"
+        manpeis.style.display="block";
+    }
+}
+/*点击<配饰返回上一层*/
+var manps1=document.getElementsByClassName("nav-man-ps1")[0]
+manps1.onclick=function(){
+    for(var i of manna){
+        i.style.display="block";
+        manri.style.display="block"
+        manpeis.style.display="none";
+    }
+}
+/*点击特别版打开下一层*/
+var mantbb=document.getElementsByClassName("nav-man-tbb")[0]
+var mantebb=document.getElementsByClassName("nav-man-tebb")[0]
+mantbb.onclick=function(){
+    for(var i of manna){
+        i.style.display="none";
+        manri.style.display="none"
+        mantebb.style.display="block";
+    }
+}
+/*点击<特别版返回上一层*/
+var mantbb1=document.getElementsByClassName("nav-man-tbb1")[0]
+mantbb1.onclick=function(){
+    for(var i of manna){
+        i.style.display="block";
+        manri.style.display="block"
+        mantebb.style.display="none";
+    }
+}
+/*点击系列与时装秀打开下一层*/
+var manszx=document.getElementsByClassName("nav-man-szx")[0]
+var manshizx=document.getElementsByClassName("nav-man-shizx")[0]
+manszx.onclick=function(){
+    for(var i of manna){
+        i.style.display="none";
+        manri.style.display="none"
+        manshizx.style.display="block";
+    }
+}
+/*点击<系列与时装秀返回上一层*/
+var manszx1=document.getElementsByClassName("nav-man-szx1")[0]
+manszx1.onclick=function(){
+    for(var i of manna){
+        i.style.display="block";
+        manri.style.display="block"
+        manshizx.style.display="none";
+    }
+}
+/*点击香氛打开下一层*/
+var manxf=document.getElementsByClassName("nav-man-xf")[0]
+var manxiangf=document.getElementsByClassName("nav-man-xiangf")[0]
+manxf.onclick=function(){
+    for(var i of manna){
+        i.style.display="none";
+        manxiangf.style.display="block";
+    }
+}
+/*点击<香氛返回上一层*/
+var manxf1=document.getElementsByClassName("nav-man-xf1")[0]
+manxf1.onclick=function(){
+    for(var i of manna){
+        i.style.display="block";
+        manxiangf.style.display="none";
+    }
+}
+/*点击护肤打开下一层*/
+var manhf=document.getElementsByClassName("nav-man-hf")[0]
+var manhuf=document.getElementsByClassName("nav-man-huf")[0]
+manhf.onclick=function(){
+    for(var i of manna){
+        i.style.display="none";
+        manhuf.style.display="block";
+    }
+}
+/*点击<护肤返回上一层*/
+var manhf1=document.getElementsByClassName("nav-man-hf1")[0]
+manhf1.onclick=function(){
+    for(var i of manna){
+        i.style.display="block";
+        manhuf.style.display="none";
+    }
+}
+
+// 童装
+/*点击童装进入下一层*/
+var t3=document.getElementsByClassName("popup-nav-t3")[0];
+var pnc=document.getElementsByClassName("popup-nav-child")[0];
+t3.onclick=function(){
+    for(var i of tn){
+        i.style.display="none";
+    }
+    pnc.style.display="block";
+}
+/*点击<童装返回上一层*/
+var tt3=document.getElementsByClassName("popup-nav-tt3")[0]; 
+tt3.onclick=function(){
+    for(var i of tn){
+        pnc.style.display="none";
+        i.style.display="block";
+    }
+}
+
+
+
+
+/*点击第二级目录打开下一层*/
+// var childna=document.querySelectorAll(".nav-child-a");
+// var childnr=document.querySelectorAll(".nav-child-return");
+// var childnu=document.querySelectorAll(".nav-child-ul");
+// // for(var key in childna){
+// //     if( key +1-0){ 
+// //         console.log(key)
+// //         console.log(childnu[0])
+// //         console.log(childnu[key])
+// //   childna[key].onclick=function(){
+// //       for(var key1 in childnu){
+// //           if(key1 +1-0){
+// //            childnu[key1].style.display="block";  
+// //           }
+// //       }
+// //         for(var i of childna){
+// //         i.style.display="none"
+// //     }
+// //     }
+// // }
+  
+// //}
+
+// for(var a of childna){
+//     a.onclick=function(){
+//         for(var b of childnu){
+//             b.style.display="block";
+//         }
+//         for(var i of childna){
+//             i.style.display="none"
+//         }
+//     }
+// }
+
+/*点击女童（2-13岁）打开下一层*/
+var childnt=document.getElementsByClassName("nav-child-nt")[0]
+var childna=document.querySelectorAll(".nav-child-a");
+var childnvt=document.getElementsByClassName("nav-child-nvt")[0]
+childnt.onclick=function(){
+    for(var i of childna){
+        i.style.display="none";
+        childnvt.style.display="block";
+    }
+}
+/*点击<女童（2-13岁）返回上一层*/
+var childnt1=document.getElementsByClassName("nav-child-nt1")[0]
+childnt1.onclick=function(){
+    for(var i of childna){
+        i.style.display="block";
+        childnvt.style.display="none";
+    }
+}
+/*点击男童（2-13岁）打开下一层*/
+var childnat=document.getElementsByClassName("nav-child-nat")[0]
+var childnant=document.getElementsByClassName("nav-child-nant")[0]
+childnat.onclick=function(){
+    for(var i of childna){
+        i.style.display="none";
+        childnant.style.display="block";
+    }
+}
+/*点击<男童（2-13岁）返回上一层*/
+var childnat1=document.getElementsByClassName("nav-child-nat1")[0]
+childnat1.onclick=function(){
+    for(var i of childna){
+        i.style.display="block";
+        childnant.style.display="none";
+    }
+}
+/*点击女婴（1-36个月）打开下一层*/
+var childny=document.getElementsByClassName("nav-child-ny")[0]
+var childnvy=document.getElementsByClassName("nav-child-nvy")[0]
+childny.onclick=function(){
+    for(var i of childna){
+        i.style.display="none";
+        childnvy.style.display="block";
+    }
+}
+/*点击<女婴（1-36个月）返回上一层*/
+var childny1=document.getElementsByClassName("nav-child-ny1")[0]
+childny1.onclick=function(){
+    for(var i of childna){
+        i.style.display="block";
+        childnvy.style.display="none";
+    }
+}
+/*点击男婴（1-36个月）打开下一层*/
+var childnay=document.getElementsByClassName("nav-child-nay")[0]
+var childnany=document.getElementsByClassName("nav-child-nany")[0]
+childnay.onclick=function(){
+    for(var i of childna){
+        i.style.display="none";
+        childnany.style.display="block";
+    }
+}
+/*点击<男婴（1-36个月）返回上一层*/
+var childnay1=document.getElementsByClassName("nav-child-nay1")[0]
+childnay1.onclick=function(){
+    for(var i of childna){
+        i.style.display="block";
+        childnany.style.display="none";
+    }
+}
+
+// 礼物
+/*点击礼物进入下一层*/
+var t4=document.getElementsByClassName("popup-nav-t4")[0];
+var png=document.getElementsByClassName("popup-nav-gift")[0];
+t4.onclick=function(){
+    for(var i of tn){
+        i.style.display="none";
+    }
+    png.style.display="block";
+}
+/*点击<礼物返回上一层*/
+var tt4=document.getElementsByClassName("popup-nav-tt4")[0]; 
+tt4.onclick=function(){
+    for(var i of tn){
+        png.style.display="none";
+        i.style.display="block";
+    }
+}
+
+// 最新消息&展览
+/*点击最新消息&展览进入下一层*/
+var t5=document.getElementsByClassName("popup-nav-t5")[0];
+var pnn=document.getElementsByClassName("popup-nav-news")[0];
+t5.onclick=function(){
+    for(var i of tn){
+        i.style.display="none";
+    }
+    pnn.style.display="block";
+}
+/*点击<最新消息&展览返回上一层*/
+var tt5=document.getElementsByClassName("popup-nav-tt5")[0]; 
+tt5.onclick=function(){
+    for(var i of tn){
+        pnn.style.display="none";
+        i.style.display="block";
+    }
+}
+
+// 品牌历史&精湛工艺
+/*点击品牌历史&精湛工艺进入下一层*/
+var t6=document.getElementsByClassName("popup-nav-t6")[0];
+var pnb=document.getElementsByClassName("popup-nav-brand")[0];
+t6.onclick=function(){
+    for(var i of tn){
+        i.style.display="none";
+    }
+    pnb.style.display="block";
+}
+/*点击<品牌历史&精湛工艺返回上一层*/
+var tt6=document.getElementsByClassName("popup-nav-tt6")[0]; 
+tt6.onclick=function(){
+    for(var i of tn){
+        pnb.style.display="none";
+        i.style.display="block";
     }
 }

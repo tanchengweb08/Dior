@@ -14,16 +14,50 @@
     justify-content: space-between;
     align-items: center;
 }
+.header-content div a{
+    text-decoration: none;
+    display: inline-block;
+}
+.header-content div a img{
+    width:40px;
+    height:40px; 
+}
+/*搜索*/
+.header-left a{  
+    width:40px;
+    height:40px;
+    position: relative;
+    top:15px;
+    left:20px; 
+    cursor:pointer;
+}
+.header-right a{  
+    width:40px;
+    height:40px;
+    position: relative;
+    top:15px;
+    left:20px;
+    margin-right:30px; 
+    cursor:pointer;
+}
+.header-center a span{
+    font-size: 50px;
+    color:#000;
+    font-family:"宋体";
+}
+/*定位按钮*/
+
 /* 目录按钮 */
-.header .header-content .header-left button{
+.header-left button{
     border:0.0625rem solid #E5E5E5;
     border-radius:1.5rem;
     height:2.5rem;
     width:5rem;
     background-color:#fff; 
     cursor:pointer;
+
 }
-.header .header-content .header-left button>span>svg{
+.header-left button>span>svg{
     width:15px;
     height:15px;
 }
@@ -33,9 +67,9 @@
     float: left;
     z-index:10;
     position: absolute;
-    top:-8px;
     left:0px;
     display: none;
+    height: 100%;
     
     
 } 
@@ -123,6 +157,7 @@
     justify-content: space-between;
     border-top:0.0625rem solid #E5E5E5;
 }
+
 /* 返回键 */
 .nav-lady-return{
     height:54px;
@@ -141,6 +176,184 @@
     text-decoration: none;
     color:#000;
     line-height: 54px;   
+}
+
+/* 男士 */
+/* 男士一级弹出框 */
+.popup-nav-man{
+    display: none;
+}
+/* 男士返回键 */
+.popup-nav-tt2{
+    margin:0 auto;
+    cursor: pointer;
+    font-size:20px;
+    height:54px;
+    width:373px;
+}
+/*隐藏二级目录*/
+.nav-man-ul{
+    display: none;
+ 
+}
+/* 弹出框二级标题 */
+.nav-man-a{
+    height:54px;
+    width: 185.375px;
+    display: inline-block;
+    text-decoration: none;
+    color:#000;
+}
+/* 返回键 */
+.nav-man-return{
+    height:54px;
+    width:403px; 
+    cursor:pointer;
+    border-top:0.0625rem solid #E5E5E5;
+    line-height: 54px;
+    border-bottom:0.0625rem solid #E5E5E5;
+    font-size:20px;
+}
+/* 第三级目录 */
+.nav-man-ul li a{
+    height:54px;
+    width:150px;
+    display: inline-block;
+    text-decoration: none;
+    color:#000;
+    line-height: 54px;   
+}
+
+/* 童装 */
+/* 童装一级弹出框 */
+.popup-nav-child{
+    display: none;
+}
+/*童装返回键 */
+.popup-nav-tt3{
+    margin:0 auto;
+    cursor: pointer;
+    font-size:20px;
+    height:54px;
+    width:373px;
+}
+/* 弹出框二级标题 */
+.nav-child-a{
+    height:54px;
+    width: 185.375px;
+    display: inline-block;
+    text-decoration: none;
+    color:#000;
+}
+/*隐藏二级目录*/
+.nav-child-ul{
+    display: none;
+ 
+}
+/* 弹出框二级标题 */
+.nav-child-a{
+    height:54px;
+    width: 185.375px;
+    display: inline-block;
+    text-decoration: none;
+    color:#000;
+}
+/* 返回键 */
+.nav-child-return{
+    height:54px;
+    width:403px; 
+    cursor:pointer;
+    border-top:0.0625rem solid #E5E5E5;
+    line-height: 54px;
+    border-bottom:0.0625rem solid #E5E5E5;
+    font-size:20px;
+}
+/* 第三级目录 */
+.nav-child-ul li a{
+    height:54px;
+    width:150px;
+    display: inline-block;
+    text-decoration: none;
+    color:#000;
+    line-height: 54px;   
+}
+/*弹出框内容居中*/
+.pop-nav-nav1 li{
+    display: flex;
+    justify-content:center;   
+}
+
+/* 礼物 */
+/* 礼物一级弹出框 */
+.popup-nav-gift{
+    display: none;
+}
+/*礼物返回键 */
+.popup-nav-tt4{
+    margin:0 auto;
+    cursor: pointer;
+    font-size:20px;
+    height:54px;
+    width:373px;
+}
+/* 弹出框二级标题 */
+.nav-gift-a{
+    height:54px;
+    width: 185.375px;
+    display: inline-block;
+    text-decoration: none;
+    color:#000;
+}
+
+/*最新消息&展览*/
+/* 最新消息&展览一级弹出框 */
+.popup-nav-news{
+    display: none;
+}
+/*最新消息&展览返回键 */
+.popup-nav-tt5{
+    margin:0 auto;
+    cursor: pointer;
+    font-size:20px;
+    height:54px;
+    width:373px;
+}
+/* 弹出框二级标题 */
+.nav-news-a{
+    height:54px;
+    width: 185.375px;
+    display: inline-block;
+    text-decoration: none;
+    color:#000;
+}
+
+/*品牌历史&精湛工艺*/
+/* 品牌历史&精湛工艺一级弹出框 */
+.popup-nav-brand{
+    display: none;
+}
+/*品牌历史&精湛工艺返回键 */
+.popup-nav-tt6{
+    margin:0 auto;
+    cursor: pointer;
+    font-size:20px;
+    height:54px;
+    width:373px;
+}
+/* 弹出框二级标题 */
+.nav-brand-a{
+    height:54px;
+    width: 185.375px;
+    display: inline-block;
+    text-decoration: none;
+    color:#000;
+}
+.pop-nav-buttom li a{
+    height:54px;
+    width: 185.375px;
+    display: inline-block;
+    text-decoration: none;
+    color:#000;
 }
 
 
